@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>F1 Teams</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/main.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="img/f1.png" alt="F1 Logo" class="logo-image">
+            <b>F1 Championship</b>
+        </a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="drivers.html">Drivers</a>
+            <a href="league.html">Team League</a>
+            <a href="dashboards.html">Dashboards</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <!-- F1 Teams Table -->
+
+
+        <div class="header1">
+            <h1>F1 Teams Details</h1>
+            <p style="display: inline-block; margin-left: 10px;">
+                <b><a href="#" class="fancy-button" onclick="showCreatePopup()">Create New Team</a></b>
+            </p>
+        </div>
+<table>
+    <thead>
+        <tr>
+            <th>Team Number</th> <!-- New header for numbering -->
+            <th>Team Name</th>
+            <th>Headquarters</th>
+            <th>Team Principal</th>
+            <th>Chassis</th>
+            <th>Engine</th>
+            <th>Drivers</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Add the row numbers as the first column in each row -->
+        <tr>
+            <td>1</td>
+            <td>Mercedes-AMG Petronas</td>
+            <td>Brackley, Northamptonshire, England</td>
+            <td>Toto Wolff</td>
+            <td>F1 W14 E Performance</td>
+            <td>Mercedes</td>
+            <td>Lewis Hamilton, George Russell</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Red Bull Racing</td>
+            <td>Milton Keynes, England</td>
+            <td>Christian Horner</td>
+            <td>RB20</td>
+            <td>Honda</td>
+            <td>Max Verstappen, Sergio Perez</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Scuderia Ferrari</td>
+            <td>Maranello, Italy</td>
+            <td>Frédéric Vasseur</td>
+            <td>SF-24</td>
+            <td>Ferrari</td>
+            <td>Charles Leclerc, Carlos Sainz</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>McLaren</td>
+            <td>Woking, Surrey, England</td>
+            <td>Andrea Stella</td>
+            <td>MCL60</td>
+            <td>Mercedes</td>
+            <td>Lando Norris, Oscar Piastri</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Alpine</td>
+            <td>Enstone, Oxfordshire, England</td>
+            <td>Philippe Krief</td>
+            <td>A625</td>
+            <td>Renault</td>
+            <td>Pierre Gasly, Esteban Ocon</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Aston Martin</td>
+            <td>Silverstone, England</td>
+            <td>Mike Krack</td>
+            <td>AMR24</td>
+            <td>Mercedes</td>
+            <td>Fernando Alonso, Lance Stroll</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Haas</td>
+            <td>Kannapolis, North Carolina, USA</td>
+            <td>Guenther Steiner</td>
+            <td>VF-24</td>
+            <td>Ferrari</td>
+            <td>Kevin Magnussen, Nico Hülkenberg</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Alfa Romeo</td>
+            <td>Hinwil, Switzerland</td>
+            <td>Andreas Seidl</td>
+            <td>C45</td>
+            <td>Ferrari</td>
+            <td>Valtteri Bottas, Zhou Guanyu</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>AlphaTauri</td>
+            <td>Faenza, Italy</td>
+            <td>Laurent Mekies</td>
+            <td>AT05</td>
+            <td>Honda</td>
+            <td>Yuki Tsunoda, Nyck de Vries</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Williams</td>
+            <td>Grove, Oxfordshire, England</td>
+            <td>James Vowles</td>
+            <td>FW46</td>
+            <td>Mercedes</td>
+            <td>Alexander Albon, Logan Sargeant</td>
+            <td><button class="fancy-button" onclick="editCSS(this)">Edit</button></td>
+            <td><button class="fancy-delete-button" onclick="deletebutton(this)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Current F1 Teams</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Team</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img src="img/mercedes.webp" alt="Mercedes-AMG Petronas" style="width:100px;">
+                <h3>Mercedes-AMG Petronas</h3>
+            </td>
+            <td>
+                <p>The Mercedes-AMG Petronas Formula One Team is a British-based, German-licensed Formula One team.</p>
+                <p><strong>Founded:</strong> 2010</p>
+                <p><strong>Country:</strong> United Kingdom, Germany</p>
+                <p><strong>Total World Championships:</strong> 8</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/redbull.webp" alt="Red Bull Racing" style="width:100px;">
+                <h3>Red Bull Racing</h3>
+            </td>
+            <td>
+                <p>Red Bull Racing, also known as RBR, is an Austrian Formula One team based in the United Kingdom.</p>
+                <p><strong>Founded:</strong> 2005</p>
+                <p><strong>Country:</strong> Austria</p>
+                <p><strong>Total World Championships:</strong> 6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/ferrari.webp" alt="Scuderia Ferrari" style="width:100px;">
+                <h3>Scuderia Ferrari</h3>
+            </td>
+            <td>
+                <p>Scuderia Ferrari is the racing team division of Ferrari, the Italian luxury sports car manufacturer.</p>
+                <p><strong>Founded:</strong> 1929</p>
+                <p><strong>Country:</strong> Italy</p>
+                <p><strong>Total World Championships:</strong> 16</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/mclaren.webp" alt="McLaren" style="width:100px;">
+                <h3>McLaren</h3>
+            </td>
+            <td>
+                <p>McLaren Racing is a British Formula One team based in Woking, Surrey, England.</p>
+                <p><strong>Founded:</strong> 1963</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Total World Championships:</strong> 8</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/alpine.webp" alt="Alpine" style="width:100px;">
+                <h3>Alpine</h3>
+            </td>
+            <td>
+                <p>Alpine, formerly known as Renault, is a French Formula One team based in Enstone, Oxfordshire, England.</p>
+                <p><strong>Founded:</strong> 1977</p>
+                <p><strong>Country:</strong> France</p>
+                <p><strong>Total World Championships:</strong> 2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/astonmartin.webp" alt="Aston Martin" style="width:100px;">
+                <h3>Aston Martin</h3>
+            </td>
+            <td>
+                <p>Aston Martin Cognizant Formula One Team is a British-based racing team that was previously known as Racing Point.</p>
+                <p><strong>Founded:</strong> 2018</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Total World Championships:</strong> 0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/haas.webp" alt="Haas" style="width:100px;">
+                <h3>Haas</h3>
+            </td>
+            <td>
+                <p>Haas F1 Team is an American racing team based in Kannapolis, North Carolina, USA.</p>
+                <p><strong>Founded:</strong> 2016</p>
+                <p><strong>Country:</strong> USA</p>
+                <p><strong>Total World Championships:</strong> 0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/alfaromeo.webp" alt="Alfa Romeo" style="width:100px;">
+                <h3>Alfa Romeo</h3>
+            </td>
+            <td>
+                <p>Alfa Romeo F1 Team is an Italian-Swiss team based in Hinwil, Switzerland. It is also known as Sauber.</p>
+                <p><strong>Founded:</strong> 1910</p>
+                <p><strong>Country:</strong> Italy, Switzerland</p>
+                <p><strong>Total World Championships:</strong> 2</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/alphatauri.webp" alt="AlphaTauri" style="width:100px;">
+                <h3>AlphaTauri</h3>
+            </td>
+            <td>
+                <p>Scuderia AlphaTauri, previously known as Toro Rosso, is an Italian team based in Faenza.</p>
+                <p><strong>Founded:</strong> 1985</p>
+                <p><strong>Country:</strong> Italy</p>
+                <p><strong>Total World Championships:</strong> 0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="img/williams.webp" alt="Williams" style="width:100px;">
+                <h3>Williams</h3>
+            </td>
+            <td>
+                <p>Williams Racing is a British team based in Grove, Oxfordshire, England.</p>
+                <p><strong>Founded:</strong> 1977</p>
+                <p><strong>Country:</strong> United Kingdom</p>
+                <p><strong>Total World Championships:</strong> 9</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <p>© 2024 F1 Cars. All rights reserved.</p>
+            </footer>
+
+    <!-- Popup Form -->
+<div id="edit-popup" class="hidden popup-form">
+    <div class="popup-content">
+        <h3>Edit Team Details</h3>
+        <form id="edit-form" onsubmit="createTeam(event)">
+            <label for="team-no">Team Number</label>
+            <input type="text" id="team-no" name="team-no" disabled>
+
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name">
+
+            <label for="headquarters">Headquarters:</label>
+            <input type="text" id="headquarters" name="headquarters">
+
+            <label for="team-principal">Team Principal:</label>
+            <input type="text" id="team-principal" name="team-principal">
+
+            <label for="chassis">Chassis:</label>
+            <input type="text" id="chassis" name="chassis">
+
+            <label for="engine">Engine:</label>
+            <input type="text" id="engine" name="engine">
+
+            <label for="drivers">Drivers:</label>
+            <input type="text" id="drivers" name="drivers">
+
+            <div class="buttons">
+                <button type="submit">Save</button>
+                <button type="button" onclick="closePopup()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Popup Form for Creating a New F1 Team -->
+<div id="create-popup" class="hidden popup-form">
+    <div class="popup-content">
+        <h3>Create New F1 Team</h3>
+        <form id="create-form" onsubmit="createTeam(event)">
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required>
+
+            <label for="headquarters">Headquarters:</label>
+            <input type="text" id="headquarters" name="headquarters" required>
+
+            <label for="team-principal">Team Principal:</label>
+            <input type="text" id="team-principal" name="team-principal" required>
+
+            <label for="chassis">Chassis:</label>
+            <input type="text" id="chassis" name="chassis" required>
+
+            <label for="engine">Engine:</label>
+            <input type="text" id="engine" name="engine" required>
+
+            <label for="drivers">Drivers:</label>
+            <input type="text" id="drivers" name="drivers" required>
+
+            <div class="buttons">
+                <button type="submit">Create</button>
+                <button type="button" onclick="closeCreatePopup()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Confirmation Popup for Deletion -->
+<div id="delete-confirmation-popup" class="popup-form hidden">
+    <div class="popup-content">
+        <h3>Delete Row</h3>
+        <p>Are you sure you want to delete this row?</p>
+        <div class="buttons">
+            <button id="confirm-delete" class="fancy-delete-button">Delete</button>
+            <button id="cancel-delete" class="fancy-button">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
