@@ -53,10 +53,6 @@
   }
  });
 
-
-
-
-
  // constructorChart.js
 
 // Data representing the number of championships won by constructors since the start of F1
