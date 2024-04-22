@@ -1,10 +1,3 @@
-/**
- * Your JS code here
- */
-
-/**
- * Sample code
- */
 
       let currentSlide = 0;
 
@@ -44,7 +37,7 @@
       }
 
       document.addEventListener('DOMContentLoaded', function () {
-          // Set up navigation buttons
+         
           document.querySelector('.next').addEventListener('click', nextSlide);
           document.querySelector('.prev').addEventListener('click', prevSlide);
 
