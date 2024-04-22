@@ -1,10 +1,3 @@
-/**
- * Your JS code here
- */
-
-/**
- * Sample code
- */
 
       let currentSlide = 0;
 
