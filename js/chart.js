@@ -3,7 +3,6 @@
  const maxRaceResults = [25, 18, 15, 12, 17, 22, 20, 8, 18, 25]; // Sample points for Max
  const lewisRaceResults = [18, 25, 12, 15, 10, 20, 22, 25, 15, 18]; // Sample points for Lewis
 
- // Create a chart
  const ctx = document.getElementById('myChart').getContext('2d');
  const myChart = new Chart(ctx, {
    type: 'bar',
