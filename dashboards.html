@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Website Chart</title>
+  <!-- Include Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+canvas {
+  width: 30%; /* Set the width to 90% of the container */
+  max-width: 800px; /* Limit the maximum width to 800px */
+  height: auto; /* Let the height adjust automatically based on the width */
+  margin: 20px auto; /* Adjust the margin as needed */
+  display: block;
+}
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html" class="logo">
+      <img src="img/f1.png" alt="F1 Logo" class="logo-image">
+      <b>F1 Championship</b>
+    </a>
+    <div class="header-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="teams.html">Teams</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="league.html">Team League</a>
+      <a href="dashboards.html">Dashboards</a>
+      <a href="about.html">About</a>
+    </div>
+  </div>
+
+  <div class="header1">
+    <h1>F1 Website Chart</h1>
+</div>
+  <canvas id="myChart" width="2400" height="1800"></canvas>
+  <canvas id="constructorChart" width="200" height="200"></canvas>
+  <canvas id="fastestLapChart" width="2200" height="1600"></canvas>
+  <script src="js/chart.js"></script>
+
+
+
+
+</body>
+
+            <!-- Footer -->
+            <footer class="footer">
+              <div class="social-links">
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
+                  <a href="#">Instagram</a>
+              </div>
+              <p>© 2024 F1 Championship. All rights reserved.</p>
+          </footer>
+
+</html>
